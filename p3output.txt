@@ -1,1 +1,5 @@
-
+gcc -g p3original.c
+ ./a.out
+enter the number to check : 
+23
+the given number 23 is not composite
