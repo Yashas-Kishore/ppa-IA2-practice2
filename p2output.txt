@@ -1,1 +1,9 @@
-
+gcc -g p2original.c
+ ./a.out
+enter the side of the triangle : 
+4
+enter the side of the triangle : 
+8
+enter the side of the triangle : 
+3
+is scalene
