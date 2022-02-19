@@ -20,11 +20,11 @@ int check_scalene(int a, int b, int c)
   }
   else if(a==b && a!=c)
   {
-    tri=2;
+    tri=1;
   }
   else if(b==c && a!=b)
   {
-    tri=3;
+    tri=1;
   }
   else 
   {
@@ -40,14 +40,6 @@ void output(int a, int b, int c, int tri)
   printf(" is equilateral ");
   }
   if(tri==1)
-  {
-  printf(" is isosceles ");
-  }
-  if(tri==2)
-  {
-  printf(" is isosceles ");
-  }
-  if(tri==3)
   {
   printf(" is isosceles ");
   }

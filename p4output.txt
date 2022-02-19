@@ -1,1 +1,25 @@
-
+gcc -g p4original.c
+ ./a.out
+enter the of number of values to enter
+10
+enter the numbers
+4
+enter the numbers
+1
+enter the numbers
+2
+enter the numbers
+8
+enter the numbers
+5
+enter the numbers
+21
+enter the numbers
+11
+enter the numbers
+12
+enter the numbers
+13
+enter the numbers
+10
+the sum is 55

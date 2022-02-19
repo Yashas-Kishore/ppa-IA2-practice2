@@ -2,6 +2,7 @@
 int input_array_size()
 {
   int a;
+  printf("enter the of number of values to enter\n");
   scanf("%d",&a);
   return a;
 }
@@ -9,6 +10,7 @@ void input_array(int n, int a[])
 {
   for(int i=0;i<n;i++)
     {
+      printf("enter the numbers\n");
       scanf("%d",&a[i]);
     }
 }
@@ -41,10 +43,8 @@ void out_put(int sum)
 int main()
 {
   int n,sum;
-  printf("enter the size of numbers\n");
   n=input_array_size();
   int a[n];
-  printf("enter the %d numbers\n",n);
   input_array(n,a);
   sum=sum_composite_number(n,a);
   out_put(sum);
