@@ -6,7 +6,7 @@ typedef struct _triangle
 Triangle input_triangle()
 {
   Triangle a;
-  printf("enter the base and altitude of the triangle\n");
+  printf("enter the base and height of the triangle respectively:\n");
   scanf("%f %f",&a.base,&a.altitude);
   return(a);
 }
