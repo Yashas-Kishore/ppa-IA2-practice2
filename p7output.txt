@@ -1,1 +1,45 @@
 
+Breakpoint 1, main () at p7original.c:22
+22  {
+(gdb) n
+24    a=input_triangle();
+(gdb) s
+input_triangle () at p7original.c:7
+7   {
+(gdb) n
+9     printf("enter the base and height of the triangle respectively:\n");
+(gdb) n
+enter the base and height of the triangle respectively:
+10    scanf("%f %f",&a.base,&a.altitude);
+(gdb) n
+4
+5
+11    return(a);
+(gdb) n
+12  }
+(gdb) n
+main () at p7original.c:25
+25    find_area(&a);
+(gdb) s
+find_area (t=0x7ffe716d10fc) at p7original.c:15
+15    t->area=t->base*(t->altitude*0.5);
+(gdb) n
+16  }
+(gdb) n
+main () at p7original.c:26
+26    output(a);
+(gdb) n
+the area of triangle with base 4.000000 height 5.000000 is 10.000000
+27    return 0;
+(gdb) n
+28  }(gdb) p a
+$1 = {base = 4, altitude = 5, area = 10}
+(gdb) l
+23    Triangle a;
+24    a=input_triangle();
+25    find_area(&a);
+26    output(a);
+27    return 0;
+28  }(gdb) c
+Continuing.
+[Inferior 1 (process 655) exited normally]

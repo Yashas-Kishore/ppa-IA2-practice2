@@ -1,7 +1,8 @@
 #include<stdio.h>
 void input_string(char *a)
 {
-  scanf("%s",a);
+  printf("enter the sentence/word to reverse:\n");
+  scanf("%[^\n]s",a);
 }
 void str_revers(char *a, char *r)
 {
@@ -10,7 +11,7 @@ void str_revers(char *a, char *r)
     {
       k=k+1;
     }
-  for(int i=0;i<k+1;i++)
+  for(int i=0;i<=k;i++)
     {
       r[i]=a[k-i-1];
     }
@@ -21,8 +22,9 @@ void output(char *a,char *revers)
 }
 int main()
 {
-  char a[20],r[20];
+  char a[200],r[200];
   input_string(a);
   str_revers(a,r);
   output(a,r);
+  return 0;
 }
