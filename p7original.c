@@ -24,4 +24,5 @@ int main()
   a=input_triangle();
   find_area(&a);
   output(a);
+  return 0;
 }
